@@ -3,22 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class HomeToPath : MonoBehaviour
+public class SceneSwitcher : MonoBehaviour
 {
     [SerializeField]
     private string sceneName;
 
-    public void start() {
-
-    }
-
-    public void update() {
-
-    }
-
     public void switchScene() {
         if (!string.IsNullOrEmpty(sceneName)) {
-            SceneManager.LoadScene(sceneName);
+            SceneHistoryManager.LoadScene(sceneName);
         } else {
             Debug.LogError("Scene name is empty");
         }

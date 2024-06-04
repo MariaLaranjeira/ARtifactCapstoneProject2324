@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/HomePage.unity
     guid: 0ea1b0081a2ce3f46a6455b5859e4cd2
   - enabled: 1
+    path: Assets/Scenes/NavigationScene.unity
+    guid: 26c06cfa201801048979bb0c20be279b
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/FirstStageIntroduction.unity
+    guid: 5272071b04660b940b16d6f124086824
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/FirstStageCharacterSelection.unity
+    guid: 299db2429b42c42498f6833f4dd4d185
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:

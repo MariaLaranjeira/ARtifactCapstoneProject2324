@@ -41,10 +41,11 @@ public class LogoRotation : MonoBehaviour
 
             timeElapsed += Time.deltaTime;
             float progress = timeElapsed / duration;
-            float scale = Mathf.Lerp(originalScale.x, originalScale.x * scaleMultiplier, Mathf.Sin(progress * Mathf.PI));
+            float scale_x = Mathf.Lerp(originalScale.x, originalScale.x * scaleMultiplier, Mathf.Sin(progress * Mathf.PI));
+            float scale_y = Mathf.Lerp(originalScale.y, originalScale.y * scaleMultiplier, Mathf.Sin(progress * Mathf.PI));
 
             transform.Rotate(Vector3.forward, rotationStep);
-            transform.localScale = new Vector3(scale, scale, transform.localScale.z);
+            transform.localScale = new Vector3(scale_x, scale_y, transform.localScale.z);
             yield return null;
         }
 
