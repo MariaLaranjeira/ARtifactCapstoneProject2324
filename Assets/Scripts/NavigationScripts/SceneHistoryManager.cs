@@ -37,14 +37,14 @@ public class SceneHistoryManager : MonoBehaviour
         while (sceneHistory.Count > 0)
         {
             string previousScene = sceneHistory.Pop();
-            if (previousScene == "NavigationPage")
+            if (previousScene == "NavigationScene")
             {
                 SceneManager.LoadScene(previousScene);
                 return;
             }
         }
 
-        Debug.LogWarning("NavigationPage not found in history. Loading it directly.");
-        SceneManager.LoadScene("NavigationPage");
+        Debug.LogWarning("NavigationScene not found in history. Loading it directly.");
+        SceneManager.LoadScene("NavigationScene");
     }
 }
