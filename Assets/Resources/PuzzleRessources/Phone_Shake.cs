@@ -34,7 +34,7 @@ public class Phone_Shake : MonoBehaviour
             {
                 shake = true;
                 Debug.Log("Shake detected!");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Puzzle Game Scene");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("PuzzleGameScene");
             }
         }
 
