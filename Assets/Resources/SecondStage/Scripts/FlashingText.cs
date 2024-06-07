@@ -19,8 +19,14 @@ public class FlashingText : MonoBehaviour
 
         textToFlash.fontSize = baseFontSize;
         flashSpeed = 1;
+    }
 
-        StartCoroutine(FlashText());
+    void OnEnable()
+    {
+        if (textToFlash != null)
+        {
+            StartCoroutine(FlashText());
+        }
     }
 
     IEnumerator FlashText()
@@ -40,5 +46,4 @@ public class FlashingText : MonoBehaviour
             }
         }
     }
-
 }

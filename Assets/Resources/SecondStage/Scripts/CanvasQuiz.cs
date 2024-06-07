@@ -27,6 +27,7 @@ public class CanvasQuiz : MonoBehaviour
     public int[] answerPosition = {0, 1, 1, 0, 0, 0};
     private int currentQuestionIndex = 0;
     public int correctAnswers = 0;
+    public bool finished = false;
 
     private void Start()
     {
@@ -56,6 +57,9 @@ public class CanvasQuiz : MonoBehaviour
         questionText.text = questions[0];
         leftButton.GetComponentInChildren<TextMeshProUGUI>().text = answers[0][0];
         rightButton.GetComponentInChildren<TextMeshProUGUI>().text = answers[0][1];
+
+        videoPlayer.clip = videoClips[0];
+        videoPlayer.Play();
         
         leftButton.GetComponent<Image>().color = indigo;
         rightButton.GetComponent<Image>().color = indigo;
@@ -135,6 +139,11 @@ public class CanvasQuiz : MonoBehaviour
     else
     {
         Debug.Log("Quiz finished");
+        if (!finished){
+            finished = true;
+            NavigationManager.NextLevel();
+        }
+
         questionText.gameObject.SetActive(false);
         leftButton.gameObject.SetActive(false);
         rightButton.gameObject.SetActive(false);

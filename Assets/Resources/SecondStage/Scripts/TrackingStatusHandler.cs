@@ -8,7 +8,7 @@ public class TrackingStatusHandler : MonoBehaviour
 {
     public GameObject QuizPanel;
     public TextMeshProUGUI statusText;
-    public float popUpDuration = 0.5f; // Duration of the pop-up animation
+    public float popUpDuration = 0.5f;
     private ObserverBehaviour mObserverBehaviour;
     private CanvasGroup canvasGroup;
     private Vector3 originalScale;
@@ -28,7 +28,9 @@ public class TrackingStatusHandler : MonoBehaviour
             Debug.LogError("CanvasGroup component not found on QuizPanel.");
         }
 
-        QuizPanel.SetActive(false); // Ensure the panel starts off hidden
+        QuizPanel.SetActive(false);
+        statusText.gameObject.SetActive(true);
+        Debug.Log("TEXT APPEARING");
     }
 
     void Update()
@@ -43,7 +45,6 @@ public class TrackingStatusHandler : MonoBehaviour
                     StartCoroutine(PopUpPanel());
                 }
                 statusText.gameObject.SetActive(false);
-                Debug.Log("Tracking status: " + statusText.text);
             }
             else
             {
@@ -54,9 +55,8 @@ public class TrackingStatusHandler : MonoBehaviour
 
     IEnumerator PopUpPanel()
     {
-        QuizPanel.transform.localScale = Vector3.zero; // Start scale at zero
-        canvasGroup.alpha = 0; // Start with transparent panel
-
+        QuizPanel.transform.localScale = Vector3.zero;
+        canvasGroup.alpha = 0;
         float elapsedTime = 0f;
 
         while (elapsedTime < popUpDuration)
