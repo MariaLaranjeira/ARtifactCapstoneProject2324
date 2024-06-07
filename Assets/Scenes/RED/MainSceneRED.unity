@@ -1100,8 +1100,8 @@ GameObject:
   - component: {fileID: 1048165217}
   - component: {fileID: 1048165216}
   - component: {fileID: 1048165215}
-  - component: {fileID: 1048165218}
   - component: {fileID: 1048165219}
+  - component: {fileID: 1048165220}
   m_Layer: 0
   m_Name: ChinTarget
   m_TagString: Untagged
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1048165218}
+  mPreview: {fileID: 1048165220}
 --- !u!4 &1048165217
 Transform:
   m_ObjectHideFlags: 0
@@ -1196,25 +1196,6 @@ Transform:
   - {fileID: 117614857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1048165218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048165213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1048165216}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: pormenor_cara_cn
-  mDatasetName: Vuforia/ARPI.xml
-  mCastedBehaviour: {fileID: 1048165216}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1048165219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,6 +1242,25 @@ MonoBehaviour:
       m_Calls: []
   imageObject: {fileID: 1142090966}
   newSprite: {fileID: 21300000, guid: ef826cde85fde8f4ab0965e630b8eeb5, type: 3}
+--- !u!114 &1048165220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048165213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1048165216}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: pormenor_cara_cn
+  mDatasetName: Vuforia/ARPI.xml
+  mCastedBehaviour: {fileID: 1048165216}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1076397830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,8 +1431,8 @@ GameObject:
   - component: {fileID: 1372614187}
   - component: {fileID: 1372614186}
   - component: {fileID: 1372614185}
-  - component: {fileID: 1372614188}
   - component: {fileID: 1372614189}
+  - component: {fileID: 1372614190}
   m_Layer: 0
   m_Name: OldLadyTarget
   m_TagString: Untagged
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1372614188}
+  mPreview: {fileID: 1372614190}
 --- !u!4 &1372614187
 Transform:
   m_ObjectHideFlags: 0
@@ -1527,25 +1527,6 @@ Transform:
   - {fileID: 1488732110}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1372614188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372614183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1372614186}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: pormenor_senhora_cn
-  mDatasetName: Vuforia/ARPI.xml
-  mCastedBehaviour: {fileID: 1372614186}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1372614189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1573,25 @@ MonoBehaviour:
       m_Calls: []
   imageObject: {fileID: 411693204}
   newSprite: {fileID: 21300000, guid: c0efe9893ffa9d6479fa1696482617eb, type: 3}
+--- !u!114 &1372614190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372614183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1372614186}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: pormenor_senhora_cn
+  mDatasetName: Vuforia/ARPI.xml
+  mCastedBehaviour: {fileID: 1372614186}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1488732109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,8 +1687,8 @@ GameObject:
   - component: {fileID: 1489243329}
   - component: {fileID: 1489243328}
   - component: {fileID: 1489243327}
-  - component: {fileID: 1489243330}
   - component: {fileID: 1489243331}
+  - component: {fileID: 1489243332}
   m_Layer: 0
   m_Name: FuseTarget
   m_TagString: Untagged
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1489243330}
+  mPreview: {fileID: 1489243332}
 --- !u!4 &1489243329
 Transform:
   m_ObjectHideFlags: 0
@@ -1783,25 +1783,6 @@ Transform:
   - {fileID: 1821000126}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1489243330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489243325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1489243328}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: pormenor_fuso_cn
-  mDatasetName: Vuforia/ARPI.xml
-  mCastedBehaviour: {fileID: 1489243328}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1489243331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1848,6 +1829,25 @@ MonoBehaviour:
       m_Calls: []
   imageObject: {fileID: 2020212600}
   newSprite: {fileID: 21300000, guid: 9d4809bf4f53997498a3ea39aff832ce, type: 3}
+--- !u!114 &1489243332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489243325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1489243328}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: pormenor_fuso_cn
+  mDatasetName: Vuforia/ARPI.xml
+  mCastedBehaviour: {fileID: 1489243328}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1496260880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,8 +1859,8 @@ GameObject:
   - component: {fileID: 1496260884}
   - component: {fileID: 1496260883}
   - component: {fileID: 1496260882}
-  - component: {fileID: 1496260886}
   - component: {fileID: 1496260887}
+  - component: {fileID: 1496260888}
   m_Layer: 0
   m_Name: HandTarget
   m_TagString: Untagged
@@ -1938,7 +1938,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1496260886}
+  mPreview: {fileID: 1496260888}
 --- !u!4 &1496260884
 Transform:
   m_ObjectHideFlags: 0
@@ -1955,25 +1955,6 @@ Transform:
   - {fileID: 1076397831}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1496260886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496260880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1496260883}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: pormenor_mao_cn
-  mDatasetName: Vuforia/ARPI.xml
-  mCastedBehaviour: {fileID: 1496260883}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1496260887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2020,6 +2001,25 @@ MonoBehaviour:
       m_Calls: []
   imageObject: {fileID: 1874122509}
   newSprite: {fileID: 21300000, guid: f3a2d43927bb6be44953c7e213cdc892, type: 3}
+--- !u!114 &1496260888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496260880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1496260883}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: pormenor_mao_cn
+  mDatasetName: Vuforia/ARPI.xml
+  mCastedBehaviour: {fileID: 1496260883}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1682395489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,6 +2455,7 @@ GameObject:
   - component: {fileID: 2009921520}
   - component: {fileID: 2009921519}
   - component: {fileID: 2009921518}
+  - component: {fileID: 2009921521}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -2562,7 +2563,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2009921518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2009921521}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: switchScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2009921521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009921516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbf426f303423d4a88f5c28700f056d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: NavigationScene
 --- !u!1 &2020212598
 GameObject:
   m_ObjectHideFlags: 0
