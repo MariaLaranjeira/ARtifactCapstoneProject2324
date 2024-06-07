@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AaJXnKP/////AAABmbWIcazpnE9cq98JxKgSqJAyC2PLwr6PH5k6mmDg2Xa2ceD+9vx6kpp43nKyirNINMQcGwmPCQDepUFOTaCWtmTRiYSJ32uwngdtDN8E4DF9uTp4KA8NZ+NwCy/3HuAKCtVRf8CSuZiUAm90bIkLMjGjkvbvMSapuTHojYnSoCLoMe6pe9GQNTdydrbvdRsx9hovuCB1WVLZUL+XeHJq8naVSJ93+UyqA8+lXx0TJQebWeoqjvDm+rZ3CGqBi74441cWZGIDAZ8zSiGkiSGFwMZiPTlz4JCQKsOeUA6WPTGEzaF7S7+CBfdOUiJSBUGpBjdmBzd1OSqmn1Qf/rQK6ehQ9s+NJZBS72opHPDaiZwy
-    ufoLicenseKey: QVN2ZTBTdi8vLy8vQUFBQUtGVUtiZlVpcTBUQ3JQQjk1N2NHb05LSm9nbGtDQmczaFJvRzQ2RWIvdGdhcDkxc2RHVWtWSWJ0WWExZTZGUUkrYWtxbVNRTEg5N2JXSm9ucURIbFM4N0QyR3pvREZHcDhEQSt2UFBMeEJ0WjVENk5Qc3VEQ2JROG9TZHhLSGtxQlgwQUZ1c200MGEyZ3FJOGNlSVllR05wK1VpT3k3RHpjSFE0SlY1RWhGWVZXNjRac0VKMVlpNFdEc09mYm43S2lPMitQYy8vcy9vQUY4bTdtbDJpcUpuN1JlbmRKYWduVHNkelN0cnZLbWliZUlJa25qOWhuNFdzQmpNUWgwalFyd3lkcUZ2UDVHTUJEN3dSQnVvMnVBYXdkR2hoM3dHVDBOb2ZYeUFhNFhmMjI0SkNpdVA4aStHek82YndiTVN6RkoreXV2d1hmMHl1NS9lQmJMaG96SGQrVFpjc3Jua3RHSUk0dVduQXRzck4=
+    vuforiaLicenseKey: AdaT5SP/////AAABmf938+8Gi08pgo1wZJXm73w5UQxFLlseWgai51nF27PIZE1/CjzmlJAtMo98YSfWcQp9PIog8sLZQSp3d/myAzBPvpoa0adXZY8eZD6bcWQSEMfzexLH56j/vKfmVBX2I7pAkdaNBlqYM+Rpvng3bC2J20yU2oq6Yuxw9pa9rH41hLuxppUNKzREOXeZzol0wmqJ+RTWOr0qtMyi/mu+CmDaUxN79QaI2TjKNzGdDRq65dZcK078j3oS9wqFcOQMkGKdRAeT/Rz3rHIY0BT6AQP2wjymTaH3NWlwd9uhBEcGB5l/QIsVo7L7Vo8ZThweWP2XL2M6dG5/59ddLYh1x1/GpqtYQkErJsH+pu+1oLnC
+    ufoLicenseKey: QVoySjhVci8vLy8vQUFBQUtNbzRwQ1FIcVVyd2gzbkR1Q05IWkVDUk1Kc2xjT01hT3RkSjlyUERWRGFWZnJHcExMTlJIQnFJZURxamFHdGVMeUtTUHQ0aE5SVUtwS1k1UU1QY0ExNGVEWWlScStzSHR0QmhDNjJGZVAxUHZXeW5qS0MrOTJRRnozakdzVjI1VlV3TW93ZkRoV1JIN29wS1VuVXRldEx1clZvTyswWE5iZDlQaDdvb1ROUzBYTjZPLysxa3JUT3ZwZEFRVU1oaThUbGppelFIK2pQSXVHQWJKUXNjK2lxVjR3Q2wyalR3NTdEWXBydWEvUHR1dUwrK04wRkxUL2pPTkwvQ3BUWHVlcFFDcGU3SzBJaHJHakUxSW5YelRCQ2V2Y1kzQWZxSC9CQTNyVm5SUVhpRTFjbFBEV0I0eFZDUXorYzBwb1NPZTBhQ0Vma2oxeTN0bXJndTNuMXl0dENnU29PMDY4cjVzNU1JNVJKU00xb2w=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
-    cameraDeviceModeSetting: -3
-    maxSimultaneousImageTargets: 8
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 1
     virtualSceneScaleFactor: 1
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.22.5
-    eulaAcceptedVersions: '{"Values":["10.22","10.21"]}'
+    eulaAcceptedVersions: '{"Values":["10.21","10.22"]}'
   database:
     disableModelExtraction: 0
   shaders:

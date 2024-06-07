@@ -41,5 +41,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RED/LensSceneRED.unity
     guid: cb4d462bd401b9c4893a3c00de27c9a0
+  - enabled: 1
+    path: Assets/Scenes/puzzleScenes/PuzzleStage.unity
+    guid: a1a4f31640fd8394bb8747818eec5b6d
+  - enabled: 0
+    path: Assets/Scenes/puzzleScenes/puzzleScene.unity
+    guid: dbb64bbdb8796024b825dc99b03fe0ce
+  - enabled: 1
+    path: Assets/Scenes/puzzleScenes/PuzzleGameScene.unity
+    guid: 9963d90df5764754090519079d1845d9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b3355ef82da48c24497a63b9b99a1ddd, type: 2}
