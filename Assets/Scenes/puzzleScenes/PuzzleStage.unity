@@ -585,13 +585,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: imagem_pi
+  mTrackableName: Quadro_Puzzle
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Image_target_PI.xml
-  mAspectRatio: 0.7468354
+  mDataSetPath: Vuforia/ARPI.xml
+  mAspectRatio: 0.746835
   mImageTargetType: 0
-  mWidth: 10
-  mHeight: 7.468354
+  mWidth: 0.2
+  mHeight: 0.149367
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2034532494}
   mHiddenRoot: {fileID: 0}
-  mTargetName: imagem_pi
-  mDatasetName: Vuforia/Image_target_PI.xml
+  mTargetName: Quadro_Puzzle
+  mDatasetName: Vuforia/ARPI.xml
   mCastedBehaviour: {fileID: 2034532494}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
