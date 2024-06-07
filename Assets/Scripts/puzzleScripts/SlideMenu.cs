@@ -6,6 +6,7 @@ public class SlideMenu : MonoBehaviour
 {
     public Canvas canvas;
     public RectTransform menu;
+    public GameObject Piece_menu;
     public bool isMenuOpen = false;
     private float menuHeight;
     public int canvasHeight;
@@ -34,12 +35,14 @@ public class SlideMenu : MonoBehaviour
     public void OpenMenu()
     {
         menu.anchoredPosition = new Vector2(0, -canvasHeight + menuHeight / 2);
+        Piece_menu.SetActive(false);
         isMenuOpen = true;
     }
 
     public void CloseMenu()
     {
         menu.anchoredPosition = new Vector2(0 , -canvasHeight - menuHeight / 2 + 150);
+        Piece_menu.SetActive(true);
         isMenuOpen = false;
     }
 }

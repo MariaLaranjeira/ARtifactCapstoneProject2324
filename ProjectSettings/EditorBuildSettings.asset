@@ -50,5 +50,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/puzzleScenes/puzzleScene.unity
     guid: dbb64bbdb8796024b825dc99b03fe0ce
+    path: Assets/Scenes/puzzleScenes/PuzzleGameScene.unity
+    guid: 9963d90df5764754090519079d1845d9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b3355ef82da48c24497a63b9b99a1ddd, type: 2}
