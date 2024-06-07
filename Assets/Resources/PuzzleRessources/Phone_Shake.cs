@@ -3,7 +3,7 @@ using UnityEngine;
 public class Phone_Shake : MonoBehaviour
 {
     // The minimum change in position for a shake to be registered
-    private float shakeDetectionThreshold = 2.5f;
+    private float shakeDetectionThreshold = 1.5f;
 
     // The camera's position from the last frame
     private Vector3 lastPosition;
@@ -34,7 +34,7 @@ public class Phone_Shake : MonoBehaviour
             {
                 shake = true;
                 Debug.Log("Shake detected!");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("puzzleScene");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Puzzle Game Scene");
             }
         }
 
