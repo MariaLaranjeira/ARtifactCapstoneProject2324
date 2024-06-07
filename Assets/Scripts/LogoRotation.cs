@@ -7,8 +7,14 @@ public class LogoRotation : MonoBehaviour
     public float rotationSpeedDegSec = 180f;
     public float rotationIntervalSec = 2f;
     public float scaleMultiplier = 1.1f;
+
+    public float timeToRotate = 0f;
+    public float acceleration = 0f;
+
     private float timeSinceLastRotation;
     private Vector3 originalScale;
+    private bool isRotating;
+    private bool rotationCompleted = false;
 
     private void Start()
     {
@@ -17,13 +23,52 @@ public class LogoRotation : MonoBehaviour
 
     private void Update()
     {
-        timeSinceLastRotation += Time.deltaTime;
-
-        if (timeSinceLastRotation >= rotationIntervalSec)
+        if (rotationCompleted)
         {
-            timeSinceLastRotation = 0f;
-            StartCoroutine(RotateAndScale());
+            return;
         }
+
+        if (timeToRotate > 0f)
+        {
+            if (!isRotating)
+            {
+                StartCoroutine(RotateForTime(timeToRotate));
+            }
+        }
+        else
+        {
+            timeSinceLastRotation += Time.deltaTime;
+
+            if (timeSinceLastRotation >= rotationIntervalSec)
+            {
+                timeSinceLastRotation = 0f;
+                StartCoroutine(RotateAndScale());
+            }
+        }
+    }
+
+    private IEnumerator RotateForTime(float duration)
+    {
+        isRotating = true;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            float rotationStep = rotationSpeedDegSec * Time.deltaTime;
+            transform.Rotate(Vector3.forward, rotationStep);
+
+            elapsedTime += Time.deltaTime;
+
+            if (acceleration > 0f)
+            {
+                rotationSpeedDegSec += acceleration * Time.deltaTime;
+            }
+
+            yield return null;
+        }
+
+        isRotating = false;
+        rotationCompleted = true;
     }
 
     private IEnumerator RotateAndScale()
@@ -46,9 +91,14 @@ public class LogoRotation : MonoBehaviour
 
             transform.Rotate(Vector3.forward, rotationStep);
             transform.localScale = new Vector3(scale_x, scale_y, transform.localScale.z);
+
+            // Apply acceleration if specified
+            if (acceleration > 0f)
+            {
+                rotationSpeedDegSec += acceleration * Time.deltaTime;
+            }
+
             yield return null;
         }
-
-        //transform.localScale = originalScale;
     }
 }
