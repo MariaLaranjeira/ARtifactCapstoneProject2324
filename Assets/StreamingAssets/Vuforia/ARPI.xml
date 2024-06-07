@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="Quadro_Puzzle" size="0.200000 0.149367" />
+    <ImageTarget name="D_Pedro_SecondStage" size="0.200000 0.242424" />
+    <ImageTarget name="firststage" size="1.000000 1.573099" />
+    <ImageTarget name="pormenor_mao_cn" size="0.200000 0.175613" />
+    <ImageTarget name="pormenor_cara_cn" size="0.200000 0.199353" />
+    <ImageTarget name="pormenor_fuso_cn" size="0.200000 0.200000" />
+    <ImageTarget name="pormenor_senhora_cn" size="0.200000 0.200000" />
+  </Tracking>
+</QCARConfig>
