@@ -317,15 +317,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.019043727
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.014811788
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.021159697
+      value: 0.21159706
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -333,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0283
+      value: 0.28300005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -345,7 +345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -353,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: 0.7071067
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c1ccb55bb99c93458e896019f99323b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -589,13 +589,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Quadro_Puzzle
+  mTrackableName: QuadroPuzzle
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ARPI.xml
-  mAspectRatio: 0.746835
+  mAspectRatio: 0.7468354
   mImageTargetType: 0
-  mWidth: 0.2
-  mHeight: 0.149367
+  mWidth: 10
+  mHeight: 7.468354
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2034532494}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Quadro_Puzzle
+  mTargetName: QuadroPuzzle
   mDatasetName: Vuforia/ARPI.xml
   mCastedBehaviour: {fileID: 2034532494}
   mMeshFilter: {fileID: 0}
