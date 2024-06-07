@@ -3,7 +3,17 @@ guid: f79135e873ef3f64a9b6492bbf61be13
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Automotive led lights
+    second: {fileID: 2100000, guid: 0b2275d82115d4d4ba6247e998c620e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Charcoal
+    second: {fileID: 2100000, guid: 5abb65b85cc87da44b6e0bf89e58347b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -32,6 +32,8 @@ public class NavigationButton : MonoBehaviour
 
             PaintStatusImage.sprite = unlockedPaint;
             PaintStatusImage.transform.localScale = new Vector3(0.79f, 0.79f, 0.79f); // Change paint scale to 0.79
+
+            selfButton.interactable = true; // Enable
         }
         else if (NavigationManager.IsLevelUnlocked(levelIndex))
         {
@@ -40,6 +42,8 @@ public class NavigationButton : MonoBehaviour
 
             PaintStatusImage.sprite = unlockedPaint;
             PaintStatusImage.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f); // Change paint scale to 0.85
+
+            selfButton.interactable = true; // Enable
         }
         else
         {
@@ -56,6 +60,8 @@ public class NavigationButton : MonoBehaviour
             {
                 PaintStatusImage.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f); // Change paint scale to 0.85
             }
+
+            selfButton.interactable = false; // Disable
         }
     }
 }

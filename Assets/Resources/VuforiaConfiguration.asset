@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: ARhYrTP/////AAABmSePBjHfakZFphMVPdp6rNN7h+0lK7wx3UJ+RGPtWOEh8ZZmi0ZM/5b01A+/8AdlsP3BsZtAlfz0pFJNVsbpjlymJthewtqziTU0GCFqJcvjNG22v5mz/WKO30mHN/9cAENoAgqW8xsqOk8yqfzoJSvVnzlNXgbYGj9ikiHjA6kNYiKsT/LMeuYNyVHcMTgfNasZrcR2FROF9lkfNzeW/UCz47imBh0vK53vuwk9YkSfrPFfHxMu7fg8c05j2pOlvhnWHNFIOuIP67iwX55aaKQUa0i29KyFcJxZ+Yq/RPPhopxrxq9Z6pK+lhHehvu8DdhlsZDonWUacJKi1es+pFxNtZFdr0UbObHTZatXWoFN
+    vuforiaLicenseKey: AaJXnKP/////AAABmbWIcazpnE9cq98JxKgSqJAyC2PLwr6PH5k6mmDg2Xa2ceD+9vx6kpp43nKyirNINMQcGwmPCQDepUFOTaCWtmTRiYSJ32uwngdtDN8E4DF9uTp4KA8NZ+NwCy/3HuAKCtVRf8CSuZiUAm90bIkLMjGjkvbvMSapuTHojYnSoCLoMe6pe9GQNTdydrbvdRsx9hovuCB1WVLZUL+XeHJq8naVSJ93+UyqA8+lXx0TJQebWeoqjvDm+rZ3CGqBi74441cWZGIDAZ8zSiGkiSGFwMZiPTlz4JCQKsOeUA6WPTGEzaF7S7+CBfdOUiJSBUGpBjdmBzd1OSqmn1Qf/rQK6ehQ9s+NJZBS72opHPDaiZwy
     ufoLicenseKey: QVN2ZTBTdi8vLy8vQUFBQUtGVUtiZlVpcTBUQ3JQQjk1N2NHb05LSm9nbGtDQmczaFJvRzQ2RWIvdGdhcDkxc2RHVWtWSWJ0WWExZTZGUUkrYWtxbVNRTEg5N2JXSm9ucURIbFM4N0QyR3pvREZHcDhEQSt2UFBMeEJ0WjVENk5Qc3VEQ2JROG9TZHhLSGtxQlgwQUZ1c200MGEyZ3FJOGNlSVllR05wK1VpT3k3RHpjSFE0SlY1RWhGWVZXNjRac0VKMVlpNFdEc09mYm43S2lPMitQYy8vcy9vQUY4bTdtbDJpcUpuN1JlbmRKYWduVHNkelN0cnZLbWliZUlJa25qOWhuNFdzQmpNUWgwalFyd3lkcUZ2UDVHTUJEN3dSQnVvMnVBYXdkR2hoM3dHVDBOb2ZYeUFhNFhmMjI0SkNpdVA4aStHek82YndiTVN6RkoreXV2d1hmMHl1NS9lQmJMaG96SGQrVFpjc3Jua3RHSUk0dVduQXRzck4=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
@@ -24,7 +24,7 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.22.5
-    eulaAcceptedVersions: '{"Values":["10.22"]}'
+    eulaAcceptedVersions: '{"Values":["10.22","10.21"]}'
   database:
     disableModelExtraction: 0
   shaders:
