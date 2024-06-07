@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogar Novamente!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5016b0db3a554a2469c4f2443c178885, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
   m_sharedMaterial: {fileID: -4802444425091180664, guid: 5016b0db3a554a2469c4f2443c178885, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &137990817
@@ -362,15 +362,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397501517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 0.6754353, y: 1.6373835, z: 0.75257003}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75257003, y: 0.75257, z: 0.75257003}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2059231651}
+  m_Father: {fileID: 1877315784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 681.2039}
+  m_AnchoredPosition: {x: 0, y: 144.4538}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &397501519
@@ -395,8 +395,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Aponta a c\xE2mara para o retrato!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -485,7 +485,7 @@ MonoBehaviour:
   textToFlash: {fileID: 397501519}
   baseFontSize: 12
   fontSizeVariance: 3
-  flashSpeed: 0
+  flashSpeed: 1
 --- !u!1 &426085523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,8 +1267,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309487726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e9d3b0dfbe6a514e877e26b3546d8b7, type: 3}
   m_Name: 
@@ -1894,8 +1894,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2269,8 +2269,8 @@ MonoBehaviour:
   m_text: "Explora este retrato emblem\xE1tico enquanto descobres a vida fascinante
     do monarca fundador deste museu.\n\nVamos embarcar juntos nesta viagem pela hist\xF3ria!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.85
+  m_fontSize: 32.65
   m_fontSizeBase: 0
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2546,6 +2546,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 397501518}
   - {fileID: 2059231651}
   - {fileID: 1948916053}
   - {fileID: 606343868}
@@ -2569,7 +2570,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 177832298}
-  videoClips: []
+  videoClips:
+  - {fileID: 32900000, guid: 204248cd352574d4fa56750a54915a29, type: 3}
+  - {fileID: 32900000, guid: c39b510e9d567a44c88564f59d71dc28, type: 3}
+  - {fileID: 32900000, guid: ae1c32ad1aaa1504d9c20d4a7b69139a, type: 3}
+  - {fileID: 32900000, guid: 858d4756c2da47649b6eb6e6b4e1233e, type: 3}
+  - {fileID: 32900000, guid: f68b20b07ee4e994b8e20f178767f01d, type: 3}
+  - {fileID: 32900000, guid: af4e9043218d6ff479c3e4ffe7e6722a, type: 3}
   answerButtons: []
   questionText: {fileID: 1540398490}
   FinalText: {fileID: 1320054404}
@@ -2578,6 +2585,7 @@ MonoBehaviour:
   playAgainButton: {fileID: 426085524}
   answerPosition: 000000000100000001000000000000000000000000000000
   correctAnswers: 0
+  finished: 0
 --- !u!1 &1948916052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2714,7 +2722,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 426085527}
-  - {fileID: 397501518}
   - {fileID: 1396272648}
   - {fileID: 461714255}
   - {fileID: 724543363}
