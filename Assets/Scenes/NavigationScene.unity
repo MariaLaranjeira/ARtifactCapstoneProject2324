@@ -897,6 +897,7 @@ GameObject:
   - component: {fileID: 947779294}
   - component: {fileID: 947779297}
   - component: {fileID: 947779296}
+  - component: {fileID: 947779298}
   m_Layer: 5
   m_Name: ThirdStage
   m_TagString: Untagged
@@ -1005,7 +1006,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 947779294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 947779298}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: switchScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &947779297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,6 +1038,19 @@ MonoBehaviour:
   unlockedPaint: {fileID: 21300000, guid: 2246ef9508e87f549acc33bd805607d1, type: 3}
   normalButton: {fileID: 21300000, guid: 442cd35fae5b8c24b9df75c5b71d798b, type: 3}
   selectedButton: {fileID: 21300000, guid: fd4a2fcfe232f3344894c3b9c0745331, type: 3}
+--- !u!114 &947779298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947779292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbf426f303423d4a88f5c28700f056d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: InitialSceneRED
 --- !u!1 &1310845063
 GameObject:
   m_ObjectHideFlags: 0
