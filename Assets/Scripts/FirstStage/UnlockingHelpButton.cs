@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpToNavigation : MonoBehaviour
+public class UnlockingHelpButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        SceneHistoryManager.JumpToNavigationPage();
-        FirstStageGlobalState.initialInteractionCompleted = true;
-        NavigationManager.NextLevel();
+        FirstStageGlobalState.helpButton = true;
+        GlobalGameStateManager.SaveGameState();
     }
 
     // Update is called once per frame

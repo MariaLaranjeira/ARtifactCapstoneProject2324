@@ -282,6 +282,8 @@ MonoBehaviour:
   rotationSpeedDegSec: 180
   rotationIntervalSec: 1
   scaleMultiplier: 1.1
+  timeToRotate: 0
+  acceleration: 0
 --- !u!1 &233059147
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,16 +450,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   englishLines:
-  - Hey! I live here at the museum.
-  - And I know that a museum needs not to be explored by yourself...
-  - ... so, take one of my drawings with you!
-  - But remember - you must return it to me at the end!
+  - Very well, I see you've fulfilled your promise.
+  - ... so my drawing can return to me.
   portugueseLines:
-  - 'Hey! Eu moro aqui no museu. '
-  - "E sei que um museu n\xE3o precisa de ser explorado a s\xF3s..."
-  - ... por isso, leva um dos meus desenhos contigo!
-  - "Mas n\xE3o te esque\xE7as - ter\xE1s que mo devolver no final!"
-  nextSceneName: FirstStageCharacterSelection
+  - Muito bem, vejo que cumpriste a tua promessa.
+  - E o Rabisco pareceu gostar de ti!
+  nextSceneName: FirstStageAfterScaning2
 --- !u!114 &269630588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,7 +627,6 @@ GameObject:
   - component: {fileID: 737251390}
   - component: {fileID: 737251392}
   - component: {fileID: 737251391}
-  - component: {fileID: 737251393}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -753,20 +750,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737251389}
   m_CullTransparentMesh: 1
---- !u!114 &737251393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737251389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  englishText: Hey! I live here at the museum
-  portugueseText: 'Hey! Eu moro aqui no museu. '
 --- !u!1 &1175160252
 GameObject:
   m_ObjectHideFlags: 0
