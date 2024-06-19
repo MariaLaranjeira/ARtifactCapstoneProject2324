@@ -13,6 +13,8 @@ public class CanvasQuiz : MonoBehaviour
     Color32 neutralGray = new Color32(204, 204, 204, 255);
 
 
+    public GameObject heartPlane;
+    public GameObject fadePlane;
     public VideoPlayer videoPlayer;
     public VideoClip[] videoClips;
     private int currentVideoClipIndex = 0;
@@ -28,12 +30,14 @@ public class CanvasQuiz : MonoBehaviour
     private int currentQuestionIndex = 0;
     public int correctAnswers = 0;
     public bool finished = false;
-
+    
     private void Start()
     {
         //hide final text
         FinalText.gameObject.SetActive(false);
         playAgainButton.gameObject.SetActive(false);
+        //hide heart
+        heartPlane.SetActive(true);
 
 
         questions[0] = "Qual o ano de nascimento de D. Pedro?";
@@ -58,13 +62,24 @@ public class CanvasQuiz : MonoBehaviour
         leftButton.GetComponentInChildren<TextMeshProUGUI>().text = answers[0][0];
         rightButton.GetComponentInChildren<TextMeshProUGUI>().text = answers[0][1];
 
-        videoPlayer.clip = videoClips[0];
+        currentVideoClipIndex = 0;
+        videoPlayer.clip = videoClips[currentVideoClipIndex];
         videoPlayer.Play();
         
         leftButton.GetComponent<Image>().color = indigo;
         rightButton.GetComponent<Image>().color = indigo;
         leftButton.onClick.AddListener(() => OnAnswerClicked(0));
         rightButton.onClick.AddListener(() => OnAnswerClicked(1));
+
+        Material fadeMaterial = fadePlane.GetComponent<Renderer>().material;
+        Color color = fadeMaterial.color;
+        color.a = 0;
+        fadeMaterial.color = color;
+
+        Material heartMaterial = heartPlane.GetComponent<Renderer>().material;
+        color = heartMaterial.color;
+        color.a = 0;
+        heartMaterial.color = color;
     }
 
 
@@ -115,6 +130,9 @@ public class CanvasQuiz : MonoBehaviour
             }
             }
 
+
+
+            if (currentQuestionIndex != 5) StartCoroutine(FadeToNextVideo());
             yield return new WaitForSeconds(1);
 
             leftButton.GetComponent<Image>().color = indigo;
@@ -123,23 +141,57 @@ public class CanvasQuiz : MonoBehaviour
             UpdateQuestionAndAnswers();
         }
 
-        void UpdateQuestionAndAnswers()
+
+    IEnumerator FadeToNextVideo()
+{
+    Material fadeMaterial = fadePlane.GetComponent<Renderer>().material;
+    Material heartMaterial = heartPlane.GetComponent<Renderer>().material;
+    float fadeDuration = 1.0f;
+
+    currentVideoClipIndex = (currentVideoClipIndex + 1) % videoClips.Length;
+
+    for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+    {
+        Color color = fadeMaterial.color;
+        color.a = Mathf.Lerp(0, 1, t / fadeDuration);
+        fadeMaterial.color = color;
+        yield return null;
+    }
+
+    // Change the video after incrementing the index
+    videoPlayer.clip = videoClips[currentVideoClipIndex];
+    videoPlayer.Play();
+
+    // Fade back to transparent
+    for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+    {   
+        if (currentQuestionIndex == 5){
+        Color heartColor = heartMaterial.color;
+        heartColor.a = Mathf.Lerp(0, 1, t / fadeDuration);
+        heartMaterial.color = heartColor;}
+
+        Color color = fadeMaterial.color;
+        color.a = Mathf.Lerp(1, 0, t / fadeDuration);
+        fadeMaterial.color = color;
+        yield return null;
+    }
+}
+
+void UpdateQuestionAndAnswers()
 {
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.Length)
-    {
+    { 
         questionText.text = questions[currentQuestionIndex];
         leftButton.GetComponentInChildren<TextMeshProUGUI>().text = answers[currentQuestionIndex][0];
         rightButton.GetComponentInChildren<TextMeshProUGUI>().text = answers[currentQuestionIndex][1];
-        videoPlayer.clip = videoClips[currentVideoClipIndex];
-        videoPlayer.Play();
-        currentVideoClipIndex = (currentVideoClipIndex + 1) % videoClips.Length;
     }
     else
     {
         Debug.Log("Quiz finished");
-        if (!finished){
+        if (!finished)
+        {
             finished = true;
             NavigationManager.NextLevel();
         }
@@ -160,8 +212,13 @@ void RestartQuiz()
 {
     currentQuestionIndex = 0;
     correctAnswers = 0;
-
     currentVideoClipIndex = 0;
+
+    Material heartMaterial = heartPlane.GetComponent<Renderer>().material;
+    Color color = heartMaterial.color;
+    color.a = 0;
+    heartMaterial.color = color;
+
     videoPlayer.clip = videoClips[currentVideoClipIndex];
     videoPlayer.Play();
 
