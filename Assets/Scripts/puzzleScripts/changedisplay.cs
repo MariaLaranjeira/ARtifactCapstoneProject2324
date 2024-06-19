@@ -6,11 +6,13 @@ using UnityEngine;
 
 public class changedisplay : MonoBehaviour
 {
-        private GameObject scenery;
+    private GameObject scenery;
+    public GameObject piece;
     // Update is called once per frame
     public void makeHidden()
     {
         scenery = GameObject.Find("IntroScene");
         scenery.SetActive(false);
+        piece.SetActive(true);
     }
 }
