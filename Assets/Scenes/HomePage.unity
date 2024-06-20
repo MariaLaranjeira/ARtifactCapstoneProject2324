@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 20513027}
   - component: {fileID: 20513026}
   - component: {fileID: 20513025}
+  - component: {fileID: 20513029}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -200,7 +201,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -229,6 +230,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &20513029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20513024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca80a317e968c0d408f5398091f9b02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &243562763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1192,8 @@ MonoBehaviour:
   rotationSpeedDegSec: 180
   rotationIntervalSec: 2
   scaleMultiplier: 1.1
+  timeToRotate: 0
+  acceleration: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

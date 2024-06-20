@@ -7,8 +7,9 @@ public class JumpToNavigation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        NavigationManager.NextLevel();
         SceneHistoryManager.JumpToNavigationPage();
+        FirstStageGlobalState.initialInteractionCompleted = true;
+        NavigationManager.NextLevel();
     }
 
     // Update is called once per frame

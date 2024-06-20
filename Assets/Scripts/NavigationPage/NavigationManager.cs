@@ -14,6 +14,14 @@ public static class NavigationManager
         "TBF"
     };
 
+    public static void loadLevel(int levelIndex)
+    {
+        if (levelIndex < levels.Count)
+        {
+            currentLevel = levelIndex;
+        }
+    }
+
     public static int CurrentLevel => currentLevel;
 
     public static void NextLevel()
@@ -22,6 +30,8 @@ public static class NavigationManager
         {
             currentLevel++;
         }
+
+        GlobalGameStateManager.SaveGameState();
     }
 
     public static string GetCurrentLevelName()
