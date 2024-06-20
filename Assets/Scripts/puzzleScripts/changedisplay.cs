@@ -8,11 +8,22 @@ public class changedisplay : MonoBehaviour
 {
     private GameObject scenery;
     public GameObject piece;
-    // Update is called once per frame
+    
+    public GameObject introText;
+
+    void Start()
+    {
+        Invoke("makeVisible", 2);
+    }
     public void makeHidden()
     {
         scenery = GameObject.Find("IntroScene");
         scenery.SetActive(false);
-        piece.SetActive(true);
+        piece.SetActive(false);
+    }
+
+    public void makeVisible()
+    {
+        introText.SetActive(true);
     }
 }
