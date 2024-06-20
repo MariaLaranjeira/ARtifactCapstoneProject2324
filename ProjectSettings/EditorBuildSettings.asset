@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstStage/AfterInit/FirstStageDummy2.unity
     guid: b7198a9bb826a514abc7f99ab0592595
   - enabled: 1
+    path: Assets/Scenes/FirstStage/AfterInit/FirstStageSharing.unity
+    guid: bc1ce5f28f32be24482b7aeffd0ec580
+  - enabled: 1
     path: Assets/Scenes/SecondStage/SecondStage.unity
     guid: 9ce2b95028cee684c9327a4bacd8db99
   - enabled: 1
