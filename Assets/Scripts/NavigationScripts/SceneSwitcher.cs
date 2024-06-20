@@ -10,7 +10,11 @@ public class SceneSwitcher : MonoBehaviour
 
     public void switchScene() {
         if (!string.IsNullOrEmpty(sceneName)) {
-            SceneHistoryManager.LoadScene(sceneName);
+            if (sceneName == "main") {
+                SceneHistoryManager.JumpToNavigationPage();
+            } else {
+                SceneHistoryManager.LoadScene(sceneName);
+            }
         } else {
             Debug.LogError("Scene name is empty");
         }
