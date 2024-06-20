@@ -1,21 +1,13 @@
 using UnityEngine;
 using Vuforia;
-using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class AllTargetsFound : MonoBehaviour
 {
-    public UnityEngine.UI.Image targetImage; // The image to show when all targets are found
     public List<ObserverBehaviour> imageTargets; // List of image targets to track
-
+    public ToggleVisibility toggleVisibility; // Reference to the ToggleVisibility script
     private void Start()
     {
-        // Hide the image initially
-        if (targetImage != null)
-        {
-            targetImage.gameObject.SetActive(false);
-        }
-
         // Register to trackable events for each image target
         foreach (var target in imageTargets)
         {
@@ -45,10 +37,14 @@ public class AllTargetsFound : MonoBehaviour
             }
         }
 
-        // Show or hide the image based on the tracking state of all targets
-        if (targetImage != null)
+        // Toggle visibility if all targets are tracked
+        if (allTargetsTracked && toggleVisibility != null)
         {
-            targetImage.gameObject.SetActive(allTargetsTracked);
+            if (!REDGlobalState.incrementedLevelRED) {
+                NavigationManager.NextLevel();
+                REDGlobalState.incrementedLevelRED = true;
+            }
+            toggleVisibility.Toggle();
         }
     }
 }
