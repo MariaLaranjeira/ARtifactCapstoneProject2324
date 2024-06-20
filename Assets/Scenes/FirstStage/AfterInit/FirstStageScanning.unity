@@ -1062,8 +1062,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
-  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
+  m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1149,10 +1149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Now that you've completed the activity, you can take a phot of the
-    painting, which you can save or share with your friends!
-  portugueseText: Agora que completaste a atividade, podes fotografar o quadro para
-    guardar ou partilhar com os teus amigos!
+  englishText: As soon as the painting is detected, you will return your friend to
+    their original home. I hope you had fun!
+  portugueseText: "Assim que for detetado o quadro, ir\xE1s devolver o teu amigo
+    \xE0 sua casa de origem. Espero que se tenham divertido!"
 --- !u!1 &1869203530
 GameObject:
   m_ObjectHideFlags: 0
