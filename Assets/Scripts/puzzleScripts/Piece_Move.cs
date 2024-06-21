@@ -39,7 +39,7 @@ public class Piece_Move : MonoBehaviour
                     }
                     break;
                 case TouchPhase.Moved or TouchPhase.Stationary:
-                    if(pieceSelected && touch.phase == TouchPhase.Moved)
+                    if(pieceSelected && touch.phase == TouchPhase.Moved && Input.touchCount == 1)
                     {
                         transform.position = touchPos;
                     }
