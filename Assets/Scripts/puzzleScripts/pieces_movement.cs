@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class pieces_movement : MonoBehaviour
@@ -13,7 +14,11 @@ public class pieces_movement : MonoBehaviour
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            RaycastHit2D[] hits = Physics2D.RaycastAll(touchPosition, Vector2.zero);
+            RaycastHit2D hit = new RaycastHit2D();
+            hits = hits.OrderBy(h => h.transform.position.z).ToArray();
+            hit = hits.Length > 0 ? hits[0] : new RaycastHit2D();
 
             if (Input.touchCount == 1)
             {
