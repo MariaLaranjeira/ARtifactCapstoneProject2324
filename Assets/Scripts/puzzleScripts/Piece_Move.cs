@@ -5,6 +5,7 @@ using UnityEngine;
 public class Piece_Move : MonoBehaviour
 {
     private bool pieceSelected = false;
+    public GameObject Menu;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,8 @@ public class Piece_Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Menu.activeSelf)
+            return;
         if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -36,11 +39,11 @@ public class Piece_Move : MonoBehaviour
                     }
                     break;
                 case TouchPhase.Moved or TouchPhase.Stationary:
-                    if(pieceSelected && touch.phase == TouchPhase.Moved)
+                    if(pieceSelected && touch.phase == TouchPhase.Moved && Input.touchCount == 1)
                     {
                         transform.position = touchPos;
                     }
-                    if (Input.touchCount == 2)
+                    /*if (Input.touchCount == 2)
                     {
                         Touch touchZero = Input.GetTouch(0);
                         Touch touchOne = Input.GetTouch(1);
@@ -70,18 +73,23 @@ public class Piece_Move : MonoBehaviour
                         {
                             transform.Rotate(0, 0, -angleDifference);
                         }
-
                         // Scale object based on the distance change between touches
                         if (pieceSelected)
                         {
-                            // Define a scaleFactor to control the scaling speed
-                            float scaleFactor = 0.01f;
+                            // Calculate the initial distance between the two touches
+                            float initialTouchDistance = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+
+                            // Calculate the current distance between the two touches
+                            float touchDistance = (touchZero.position - touchOne.position).magnitude;
+
+                            // Calculate the scale factor based on the touch distance and initial touch distance
+                            float scaleFactor = touchDistance / initialTouchDistance;
 
                             // Use deltaMagnitudeDiff to scale the object
                             float newScale = Mathf.Clamp(transform.localScale.x + (deltaMagnitudeDiff * scaleFactor), 0.5f, 2f);
                             transform.localScale = new Vector3(newScale, newScale, newScale);
                         }
-                    }
+                    }*/
                     break;
                 case TouchPhase.Ended:
                     pieceSelected = false;
