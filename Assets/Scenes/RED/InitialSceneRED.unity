@@ -424,8 +424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Descobre os pormenores da pintura atrav\xE9s das silhuetas. \n\nCada descoberta
-    aproximar-te-\xE1 de novas formas de ver e capturar detalhes de maneiras \xFAnicas."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -557,7 +556,7 @@ GameObject:
   - component: {fileID: 921189399}
   - component: {fileID: 921189398}
   - component: {fileID: 921189397}
-  - component: {fileID: 921189400}
+  - component: {fileID: 921189402}
   - component: {fileID: 921189401}
   m_Layer: 5
   m_Name: IntroductoryMessage
@@ -624,25 +623,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00002861, y: 0.000038146973}
   m_SizeDelta: {x: 332.9892, y: 204.9944}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &921189400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921189396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf88c6d3670aa164697b2c40d9f50a4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  englishLines:
-  - Discover the details of the painting through the silhouettes. Each discovery
-    will get you closer to new ways of seeing and capturing details in unique ways.
-  portugueseLines:
-  - "Descobre os pormenores da pintura atrav\xE9s das silhuetas.   Cada descoberta
-    aproximar-te-\xE1 de novas formas de ver e capturar detalhes de maneiras \xFAnicas."
-  nextSceneName: MainSceneRED
 --- !u!114 &921189401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,7 +667,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921189400}
+      - m_Target: {fileID: 921189402}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextLine
         m_Mode: 1
@@ -699,6 +679,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &921189402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921189396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed373f7549a22f94c96b872c5b115cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishLines:
+  - Discover the details of the painting through the silhouettes. Each discovery
+    will get you closer to new ways of seeing and capturing details in unique ways.
+  portugueseLines:
+  - "Descobre os pormenores da pintura atrav\xE9s das silhuetas. Cada descoberta
+    aproximar-te-\xE1 de novas formas de ver e capturar detalhes de maneiras \xFAnicas. "
+  nextSceneName: MainSceneRED
 --- !u!1 &1655032237
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +844,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1655032237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095f506b7809f0047a681abf772dbb25, type: 3}
+  m_Script: {fileID: 11500000, guid: bf37d5afbe7e87545b4ae29da7115a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textToFlash: {fileID: 1655032239}
@@ -861,7 +860,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1655032237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb5127e25cfcf447a5c910f19d2a547, type: 3}
+  m_Script: {fileID: 11500000, guid: 172b852effe01f344949b89b97a35877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToDisappear:

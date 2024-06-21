@@ -226,7 +226,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogar Novamente!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: -4802444425091180664, guid: 5016b0db3a554a2469c4f2443c178885, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -439,8 +439,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Aponta a c\xE2mara para o retrato!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
-  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
+  m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1311,8 +1311,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
-  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
+  m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1938,8 +1938,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
-  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
+  m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2072,8 +2072,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Qual o ano de nascimento de D. Pedro?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
+  m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2313,8 +2313,8 @@ MonoBehaviour:
   m_text: "Explora este retrato emblem\xE1tico enquanto descobres a vida fascinante
     do monarca fundador deste museu.\n\nVamos embarcar juntos nesta viagem pela hist\xF3ria!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
-  m_sharedMaterial: {fileID: -1943909676503149864, guid: 522ab34495d30bb488d3e5bc490fe807, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
+  m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

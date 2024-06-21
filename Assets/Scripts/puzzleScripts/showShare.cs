@@ -9,4 +9,8 @@ public class showShare : MonoBehaviour
     {
         sharePanel.SetActive(true);
     }
+
+    public void showPanelDelayed(){
+        Invoke("showSharePanel", 0.5f);
+    }
 }
