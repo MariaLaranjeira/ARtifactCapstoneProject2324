@@ -717,7 +717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &256961941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1375,7 +1374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 718916410}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: showShare, Assembly-CSharp
         m_MethodName: showSharePanel
         m_Mode: 1
@@ -1413,7 +1412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenery: {fileID: 974364394}
   captureButton: {fileID: 421026339}
-  screenshotDisplay: {fileID: 494200132}
+  screenshotDisplay: {fileID: 0}
   mainCamera: {fileID: 894290994}
 --- !u!1 &426122512
 GameObject:
@@ -2233,7 +2232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &575237289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2892,7 +2890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &706259442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4503,7 +4500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &974733628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4985,7 +4981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &1084275279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5298,7 +5293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &1138615422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5939,7 +5933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &1256680676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6118,7 +6111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &1265190175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6876,7 +6868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed8c71c8e3dbe04ea88ba481f2e12e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10
 --- !u!61 &1371941683
 BoxCollider2D:
   m_ObjectHideFlags: 0
