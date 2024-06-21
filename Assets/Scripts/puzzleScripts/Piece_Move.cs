@@ -5,18 +5,18 @@ using UnityEngine;
 public class Piece_Move : MonoBehaviour
 {
     private bool pieceSelected = false;
+    public GameObject Menu;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Piece_Move script is attached to " + gameObject.name);
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!gameObject.activeInHierarchy)
+        if (!Menu.activeSelf)
             return;
         if(Input.touchCount > 0)
         {

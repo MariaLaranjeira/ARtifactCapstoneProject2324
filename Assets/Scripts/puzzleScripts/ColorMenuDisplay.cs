@@ -9,12 +9,17 @@ public class ColorMenuDisplay : MonoBehaviour
     private float menuHeight;
     public int canvasHeight;
     public GameObject Piece_menu;
+    private bool firstTime = true;
 
     void Start()
     {
         menuHeight = menu.rect.height;
         canvasHeight = (int)canvas.pixelRect.height / 2;
-        CloseMenu();
+        if(firstTime)
+        {
+            menu.anchoredPosition = new Vector2(0 , -canvasHeight - menuHeight / 2);
+            firstTime = false;
+        }
     }
 
     public void OpenMenu()

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class showShare : MonoBehaviour
 {
-    public GameObject sharePanel;
+    public GameObject sharePanel, threedots, arrowBack;
     public void showSharePanel()
     {
         sharePanel.transform.SetAsLastSibling();
+        threedots.transform.SetAsLastSibling();
+        arrowBack.transform.SetAsLastSibling();
         sharePanel.SetActive(true);
     }
 
