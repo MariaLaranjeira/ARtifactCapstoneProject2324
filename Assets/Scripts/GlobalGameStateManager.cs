@@ -16,6 +16,10 @@ public static class GlobalGameStateManager
 
     public static void LoadGameState()
     {
+        string persistentDataPath = Application.persistentDataPath;
+        Debug.Log(persistentDataPath);
+
+
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
