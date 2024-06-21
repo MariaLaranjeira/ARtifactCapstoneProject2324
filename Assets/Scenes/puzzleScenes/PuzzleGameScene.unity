@@ -1388,8 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sharePanel: {fileID: 718916406}
-  threedots: {fileID: 0}
-  arrowBack: {fileID: 0}
+  threedots: {fileID: 1488444511}
 --- !u!1 &426122512
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,7 +3009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sharePanel: {fileID: 718916406}
   threedots: {fileID: 1488444511}
-  arrowBack: {fileID: 613910714}
 --- !u!1 &728605954
 GameObject:
   m_ObjectHideFlags: 0

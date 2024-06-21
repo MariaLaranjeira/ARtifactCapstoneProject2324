@@ -43,7 +43,7 @@ public class Piece_Move : MonoBehaviour
                     {
                         transform.position = touchPos;
                     }
-                    if (Input.touchCount == 2)
+                    /*if (Input.touchCount == 2)
                     {
                         Touch touchZero = Input.GetTouch(0);
                         Touch touchOne = Input.GetTouch(1);
@@ -89,7 +89,7 @@ public class Piece_Move : MonoBehaviour
                             float newScale = Mathf.Clamp(transform.localScale.x + (deltaMagnitudeDiff * scaleFactor), 0.5f, 2f);
                             transform.localScale = new Vector3(newScale, newScale, newScale);
                         }
-                    }
+                    }*/
                     break;
                 case TouchPhase.Ended:
                     pieceSelected = false;
