@@ -8,6 +8,7 @@ public class ColorMenuDisplay : MonoBehaviour
     public RectTransform menu;
     private float menuHeight;
     public int canvasHeight;
+    public GameObject Piece_menu;
 
     void Start()
     {
@@ -19,10 +20,12 @@ public class ColorMenuDisplay : MonoBehaviour
     public void OpenMenu()
     {
         menu.anchoredPosition = new Vector2(0, -canvasHeight + menuHeight / 2);
+        Piece_menu.SetActive(false);
     }
 
     public void CloseMenu()
     {
         menu.anchoredPosition = new Vector2(0 , -canvasHeight - menuHeight / 2);
+        Piece_menu.SetActive(true);
     }
 }

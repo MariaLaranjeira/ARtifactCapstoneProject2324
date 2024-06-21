@@ -14,6 +14,7 @@ public class changedisplay : MonoBehaviour
 
     void Start()
     {
+        pieceMenu.SetActive(false);
         Invoke("makeVisible", 1.0f);
     }
     public void makeHidden()
@@ -26,7 +27,6 @@ public class changedisplay : MonoBehaviour
 
     public void makeVisible()
     {
-        pieceMenu.SetActive(false);
         introText.SetActive(true);
     }
 }

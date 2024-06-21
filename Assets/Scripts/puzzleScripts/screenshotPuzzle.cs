@@ -55,7 +55,7 @@ public class screenshotPuzzle : MonoBehaviour
 
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
         arCamera.targetTexture = renderTexture;
-        Texture2D screenShot = new Texture2D((int)width, (int)height, TextureFormat.RGB24, false);
+        Texture2D screenShot = new Texture2D((int)width, (int)height - 15, TextureFormat.RGB24, false);
         arCamera.Render();
 
         RenderTexture.active = renderTexture;
