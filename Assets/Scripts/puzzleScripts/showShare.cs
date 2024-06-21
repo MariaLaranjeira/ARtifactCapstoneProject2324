@@ -7,6 +7,7 @@ public class showShare : MonoBehaviour
     public GameObject sharePanel;
     public void showSharePanel()
     {
+        sharePanel.transform.SetAsLastSibling();
         sharePanel.SetActive(true);
     }
 

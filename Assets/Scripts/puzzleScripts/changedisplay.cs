@@ -7,23 +7,26 @@ using UnityEngine;
 public class changedisplay : MonoBehaviour
 {
     private GameObject scenery;
-    public GameObject piece;
+    public GameObject piecesExplosion;
+    public GameObject pieceMenu;
     
     public GameObject introText;
 
     void Start()
     {
-        Invoke("makeVisible", 2);
+        Invoke("makeVisible", 1.0f);
     }
     public void makeHidden()
     {
         scenery = GameObject.Find("IntroScene");
         scenery.SetActive(false);
-        piece.SetActive(false);
+        piecesExplosion.SetActive(false);
+        pieceMenu.SetActive(true);
     }
 
     public void makeVisible()
     {
+        pieceMenu.SetActive(false);
         introText.SetActive(true);
     }
 }

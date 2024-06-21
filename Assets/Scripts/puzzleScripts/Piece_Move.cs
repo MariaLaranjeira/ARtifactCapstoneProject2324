@@ -9,12 +9,15 @@ public class Piece_Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Piece_Move script is attached to " + gameObject.name);
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!gameObject.activeInHierarchy)
+            return;
         if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -70,12 +73,17 @@ public class Piece_Move : MonoBehaviour
                         {
                             transform.Rotate(0, 0, -angleDifference);
                         }
-
                         // Scale object based on the distance change between touches
                         if (pieceSelected)
                         {
-                            // Define a scaleFactor to control the scaling speed
-                            float scaleFactor = 0.01f;
+                            // Calculate the initial distance between the two touches
+                            float initialTouchDistance = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+
+                            // Calculate the current distance between the two touches
+                            float touchDistance = (touchZero.position - touchOne.position).magnitude;
+
+                            // Calculate the scale factor based on the touch distance and initial touch distance
+                            float scaleFactor = touchDistance / initialTouchDistance;
 
                             // Use deltaMagnitudeDiff to scale the object
                             float newScale = Mathf.Clamp(transform.localScale.x + (deltaMagnitudeDiff * scaleFactor), 0.5f, 2f);
