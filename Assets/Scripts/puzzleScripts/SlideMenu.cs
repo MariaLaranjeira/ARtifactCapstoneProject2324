@@ -36,6 +36,7 @@ public class SlideMenu : MonoBehaviour
     {
         menu.anchoredPosition = new Vector2(0, -canvasHeight + menuHeight / 4);
         Piece_menu.SetActive(false);
+        Debug.Log("Open Menu");
         isMenuOpen = true;
     }
 
@@ -43,6 +44,7 @@ public class SlideMenu : MonoBehaviour
     {
         menu.anchoredPosition = new Vector2(0 , -canvasHeight - menuHeight / 2);
         Piece_menu.SetActive(true);
+        Debug.Log("Close Menu");
         isMenuOpen = false;
     }
 }
