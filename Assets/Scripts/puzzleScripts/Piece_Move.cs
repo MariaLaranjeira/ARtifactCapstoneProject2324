@@ -43,37 +43,23 @@ public class Piece_Move : MonoBehaviour
                     {
                         transform.position = touchPos;
                     }
-                    /*if (Input.touchCount == 2)
+                    if (Input.touchCount == 2)
                     {
-                        Touch touchZero = Input.GetTouch(0);
-                        Touch touchOne = Input.GetTouch(1);
-
-                        // Calculate previous positions
-                        Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
-                        Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
-
-                        // Find the angle between the touches in the previous frame
-                        float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
-                        float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
-
-                        // Find the difference in the distances between each frame
-                        float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
-
-                        // Calculate angle between the touches
-                        float angle = Mathf.Atan2(touchOne.position.y - touchZero.position.y, touchOne.position.x - touchZero.position.x) * Mathf.Rad2Deg;
-
-                        // Calculate previous angle
-                        float prevAngle = Mathf.Atan2(touchOnePrevPos.y - touchZeroPrevPos.y, touchOnePrevPos.x - touchZeroPrevPos.x) * Mathf.Rad2Deg;
-
-                        // Find the difference in the angles
-                        float angleDifference = angle - prevAngle;
-
+                        Touch touch1 = Input.GetTouch(1);
+                        Vector2 touchPos1 = Camera.main.ScreenToWorldPoint(touch1.position);
                         // Rotate object
                         if (pieceSelected)
                         {
-                            transform.Rotate(0, 0, -angleDifference);
+                            // Calculate the direction from the object to the center of the canvas
+                            Vector2 direction = touchPos1 - (Vector2)transform.position;
+
+                            // Calculate the angle
+                            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+                            // Apply the rotation
+                            transform.rotation = Quaternion.Euler(0f, 0f, angle - 90); 
                         }
-                        // Scale object based on the distance change between touches
+                        /*// Scale object based on the distance change between touches
                         if (pieceSelected)
                         {
                             // Calculate the initial distance between the two touches
@@ -88,8 +74,8 @@ public class Piece_Move : MonoBehaviour
                             // Use deltaMagnitudeDiff to scale the object
                             float newScale = Mathf.Clamp(transform.localScale.x + (deltaMagnitudeDiff * scaleFactor), 0.5f, 2f);
                             transform.localScale = new Vector3(newScale, newScale, newScale);
-                        }
-                    }*/
+                        }*/
+                    }
                     break;
                 case TouchPhase.Ended:
                     pieceSelected = false;
