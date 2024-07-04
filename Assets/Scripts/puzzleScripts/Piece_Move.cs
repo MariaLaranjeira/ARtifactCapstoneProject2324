@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Piece_Move : MonoBehaviour
 {
-    private bool pieceSelected = false;
+    public bool pieceSelected = false;
     public GameObject Menu;
     private Rigidbody2D rb;
     // Start is called before the first frame update
