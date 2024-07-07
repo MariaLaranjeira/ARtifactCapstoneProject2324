@@ -5,11 +5,18 @@ using UnityEngine;
 public class showShare : MonoBehaviour
 {
     public GameObject sharePanel;
-    //public GameObject threedots;
+    public GameObject shareButton;
     public void showSharePanel()
     {
-        sharePanel.transform.SetAsLastSibling();
-        //threedots.transform.SetAsLastSibling();
+        Canvas canvas = sharePanel.GetComponentInParent<Canvas>();
+        foreach (Transform child in canvas.transform)
+        {
+            if(child.gameObject.name.StartsWith("Piece (")){
+                child.gameObject.SetActive(false);
+            }
+        }
+        //sharePanel.transform.SetAsLastSibling();
+        shareButton.SetActive(false);
         sharePanel.SetActive(true);
     }
 
