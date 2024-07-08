@@ -9,7 +9,8 @@ public class SlideMenu : MonoBehaviour
     public GameObject Piece_menu;
     public bool isMenuOpen = false;
     private float menuHeight;
-    public int canvasHeight;
+    private int canvasHeight;
+    public GameObject captureButton;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class SlideMenu : MonoBehaviour
     {
         menu.anchoredPosition = new Vector2(0, -canvasHeight + menuHeight / 4);
         Piece_menu.SetActive(false);
+        captureButton.SetActive(false);
         Debug.Log("Open Menu");
         isMenuOpen = true;
     }
