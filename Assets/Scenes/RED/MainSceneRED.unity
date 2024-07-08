@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 90876761}
   - component: {fileID: 90876760}
   - component: {fileID: 90876763}
+  - component: {fileID: 90876764}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -386,7 +387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A obra
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -483,6 +484,20 @@ MonoBehaviour:
   - {fileID: 706391339}
   objectsToAppear:
   - {fileID: 1918947347}
+--- !u!114 &90876764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90876758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: The Piece
+  portugueseText: A Obra
 --- !u!1 &97323938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1058,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0.0000019073, y: -512}
-  m_SizeDelta: {x: 361.3165, y: 87.3256}
+  m_SizeDelta: {x: 663.7064, y: 87.3256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226616992
 MonoBehaviour:
@@ -1065,7 +1080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "J\xFAlio Resende, 1878"
+  m_text: "Francisco Jos\xE9 Resende, 1878"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -1748,6 +1763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433985101}
   - component: {fileID: 433985103}
+  - component: {fileID: 433985104}
   - component: {fileID: 433985102}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -1795,7 +1811,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tens a certeza que queres avan\xE7ar sem concluir o objetivo?"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -1872,6 +1888,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433985100}
   m_CullTransparentMesh: 1
+--- !u!114 &433985104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433985100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Are you sure you want to progress without finishing the task?
+  portugueseText: "Tens a certeza que queres avan\xE7ar sem concluir o objetivo?"
 --- !u!1 &484256776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,7 +2073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17529ae377cfdba4e9cbb5c69261893b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18d0036244880894e8ba8c22c5354e8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2078,8 +2108,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -31}
-  m_SizeDelta: {x: 918.9425, y: 1212.4}
+  m_AnchoredPosition: {x: -0.000061035, y: -0.00045776}
+  m_SizeDelta: {x: 987.7933, y: 1905.2144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485239653
 MonoBehaviour:
@@ -2290,8 +2320,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.0000011305, y: 482}
-  m_SizeDelta: {x: 304.51, y: 50}
+  m_AnchoredPosition: {x: -10.897, y: 479.0815}
+  m_SizeDelta: {x: 351.2063, y: 44.163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585278024
 MonoBehaviour:
@@ -2340,8 +2370,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 38
+  m_fontSizeBase: 38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2804,6 +2834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737967874}
   - component: {fileID: 737967876}
+  - component: {fileID: 737967877}
   - component: {fileID: 737967875}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -2851,7 +2882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "N\xE3o"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -2928,6 +2959,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737967873}
   m_CullTransparentMesh: 1
+--- !u!114 &737967877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737967873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: No
+  portugueseText: "N\xE3o"
 --- !u!1 &753867109
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,6 +4325,7 @@ GameObject:
   - component: {fileID: 1095320303}
   - component: {fileID: 1095320302}
   - component: {fileID: 1095320304}
+  - component: {fileID: 1095320305}
   - component: {fileID: 1095320301}
   m_Layer: 5
   m_Name: Credits
@@ -4383,7 +4429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9ditos"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -4480,6 +4526,20 @@ MonoBehaviour:
   - {fileID: 1436051998}
   objectsToAppear:
   - {fileID: 1751031858}
+--- !u!114 &1095320305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095320299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Credits
+  portugueseText: "Cr\xE9ditos"
 --- !u!1 &1120443324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,6 +4701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215080696}
   - component: {fileID: 1215080698}
+  - component: {fileID: 1215080699}
   - component: {fileID: 1215080697}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -4688,7 +4749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sim
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -4765,6 +4826,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215080695}
   m_CullTransparentMesh: 1
+--- !u!114 &1215080699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215080695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Yes
+  portugueseText: Sim
 --- !u!1 &1230334718
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,14 +4942,14 @@ RectTransform:
   m_GameObject: {fileID: 1266454536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1918947348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -76.838, y: 0.0061163}
+  m_AnchoredPosition: {x: -76.838, y: 0}
   m_SizeDelta: {x: 1080, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266454538
@@ -6851,6 +6926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819804448}
   - component: {fileID: 1819804450}
+  - component: {fileID: 1819804451}
   - component: {fileID: 1819804449}
   m_Layer: 5
   m_Name: Info
@@ -6875,8 +6951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 0.000034332}
-  m_SizeDelta: {x: 614.3119, y: 343.4709}
+  m_AnchoredPosition: {x: 0.000017166, y: -0.000015259}
+  m_SizeDelta: {x: 833.8754, y: 1042.3652}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819804449
 MonoBehaviour:
@@ -6898,9 +6974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Information Information Information Information  Information  Information 
-    Information  Information  Information  Information  Information  Information 
-    Information '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -6909,8 +6983,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6927,8 +7001,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58
-  m_fontSizeBase: 58
+  m_fontSize: 54
+  m_fontSizeBase: 54
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6963,7 +7037,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -5.1013794, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6977,6 +7051,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819804447}
   m_CullTransparentMesh: 1
+--- !u!114 &1819804451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819804447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: " Francisco Jos\xE9 Resende de Vasconcelos, a Portuguese Romantic
+    artist born in Porto in 1825, was influenced by Augusto Roquemont at the Porto
+    Academy of Fine Arts. Known for genre painting, he depicted the customs of Northern
+    Portugal. After studying in Paris with Adolphe Yvon, he returned as a professor
+    and gained recognition with \"Pescadores de Le\xE7a,\" which was awarded in London.
+    He passed away on November 30, 1893, leaving behind the painting \"Amai-vos uns
+    aos outros,\" donated to the National Museum Soares dos Reis by his daughter."
+  portugueseText: "Francisco Jos\xE9 Resende de Vasconcelos, artista do romantismo
+    portugu\xEAs nascido no Porto em 1825, foi influenciado por Augusto Roquemont
+    na Academia Portuense de Belas Artes. Conhecido pela pintura de g\xE9nero, retratou
+    os costumes do Norte de Portugal. Ap\xF3s estudar em Paris com Adolphe Yvon,
+    retornou como professor e destacou-se com \"Pescadores de Le\xE7a\", premiado
+    em Londres.  Faleceu em 30 de novembro de 1893, deixando como legado a tela \"Amai-vos
+    uns aos outros\", doada ao Museu Nacional Soares dos Reis por sua filha."
 --- !u!1 &1821000125
 GameObject:
   m_ObjectHideFlags: 0
