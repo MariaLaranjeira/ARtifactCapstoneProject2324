@@ -5796,9 +5796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e2d7d576d04fc449719cc087a81084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  captureButton: {fileID: 0}
-  screenshotDisplay: {fileID: 0}
-  arCamera: {fileID: 0}
+  captureButton: {fileID: 1837679308}
+  screenshotDisplay: {fileID: 1869018065}
+  arCamera: {fileID: 1598783399}
 --- !u!1 &1869018063
 GameObject:
   m_ObjectHideFlags: 0
