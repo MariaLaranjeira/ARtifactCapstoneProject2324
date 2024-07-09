@@ -1137,6 +1137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418773185}
   - component: {fileID: 418773189}
+  - component: {fileID: 418773190}
   - component: {fileID: 418773188}
   - component: {fileID: 418773187}
   - component: {fileID: 418773186}
@@ -1260,7 +1261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A obra
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -1337,6 +1338,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418773184}
   m_CullTransparentMesh: 1
+--- !u!114 &418773190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418773184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: The piece
+  portugueseText: A obra
 --- !u!1 &426085523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,6 +3319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1168940591}
   - component: {fileID: 1168940595}
+  - component: {fileID: 1168940596}
   - component: {fileID: 1168940594}
   - component: {fileID: 1168940593}
   - component: {fileID: 1168940592}
@@ -3426,7 +3442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9ditos"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -3503,6 +3519,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168940590}
   m_CullTransparentMesh: 1
+--- !u!114 &1168940596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168940590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Credits
+  portugueseText: "Cr\xE9ditos"
 --- !u!1 &1203557255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3513,6 +3543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203557256}
   - component: {fileID: 1203557258}
+  - component: {fileID: 1203557259}
   - component: {fileID: 1203557257}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -3560,7 +3591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xD3leo sobre tela"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -3637,6 +3668,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203557255}
   m_CullTransparentMesh: 1
+--- !u!114 &1203557259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203557255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Oil on canvas
+  portugueseText: "\xD3leo sobre tela"
 --- !u!1 &1300948144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4384,6 +4429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412334821}
   - component: {fileID: 1412334823}
+  - component: {fileID: 1412334824}
   - component: {fileID: 1412334822}
   m_Layer: 5
   m_Name: Info
@@ -4431,14 +4477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O retrato de D. Pedro IV pintado por John Simpson em 1834 \xE9 uma obra
-    que retrata o monarca portugu\xEAs, tamb\xE9m conhecido como Pedro I do Brasil,
-    para perpetuar a imagem do monarca ap\xF3s a sua morte. Este tipo de retrato
-    era comum na \xE9poca para fins de mem\xF3ria hist\xF3rica e para afirmar a autoridade
-    e a continuidade din\xE1stica. Retratos oficiais deste per\xEDodo costumavam
-    ser formais e representar o sujeito com dignidade e autoridade. A pose, o vestu\xE1rio
-    e o ambiente em redor do retratado geralmente fornecem pistas sobre o seu status
-    e\_personalidade."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -4515,6 +4554,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412334820}
   m_CullTransparentMesh: 1
+--- !u!114 &1412334824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412334820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: ' The portrait of D. Pedro IV painted by John Simpson in 1834 is a
+    work that depicts the Portuguese monarch, also known as Pedro I of Brazil, to
+    perpetuate his image after his death. This type of portrait was common at the
+    time for historical memory purposes and to assert authority and dynastic continuity.
+    Official portraits from this period were usually formal and represented the subject
+    with dignity and authority. The pose, clothing, and surroundings of the portrayed
+    generally provide clues about their status and personality.       '
+  portugueseText: "O retrato de D. Pedro IV pintado por John Simpson em 1834 \xE9
+    uma obra que retrata o monarca portugu\xEAs, tamb\xE9m conhecido como Pedro I
+    do Brasil, para perpetuar a imagem do monarca ap\xF3s a sua morte. Este tipo
+    de retrato era comum na \xE9poca para fins de mem\xF3ria hist\xF3rica e para
+    afirmar a autoridade e a continuidade din\xE1stica. Retratos oficiais deste per\xEDodo
+    costumavam ser formais e representar o sujeito com dignidade e autoridade. A
+    pose, o vestu\xE1rio e o ambiente em redor do retratado geralmente fornecem pistas
+    sobre o seu status e\_personalidade."
 --- !u!1 &1418799699
 GameObject:
   m_ObjectHideFlags: 0
