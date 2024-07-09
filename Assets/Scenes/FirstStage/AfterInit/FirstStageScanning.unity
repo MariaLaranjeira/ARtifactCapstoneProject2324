@@ -1251,9 +1251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1869203530}
-  targetScale: {x: 2, y: 2, z: 2}
-  scalingDuration: 3
-  nextSceneName: FirstStageAfterScaning1
+  targetScale: {x: 0.2, y: 0.2, z: 0.2}
+  scalingDuration: 0.5
+  nextSceneName: FirstStageAfterScaning
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -36,17 +36,14 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstStage/AfterInit/FirstStageScanning.unity
     guid: 75f5c578251716947a6e9f9aca98b9fe
   - enabled: 1
-    path: Assets/Scenes/FirstStage/AfterInit/FirstStageAfterScaning1.unity
+    path: Assets/Scenes/FirstStage/AfterInit/FirstStageAfterScaning.unity
     guid: 82c4e4268a00d5e428d55012736f8503
-  - enabled: 1
-    path: Assets/Scenes/FirstStage/AfterInit/FirstStageAfterScaning2.unity
-    guid: 1143590c640b3464583c1574c082612c
   - enabled: 1
     path: Assets/Scenes/FirstStage/AfterInit/FirstStageDummy2.unity
     guid: b7198a9bb826a514abc7f99ab0592595
   - enabled: 1
     path: Assets/Scenes/FirstStage/AfterInit/FirstStageSharing.unity
-    guid: bc1ce5f28f32be24482b7aeffd0ec580
+    guid: a783491d30d54f74fb0304c3dc15ba24
   - enabled: 1
     path: Assets/Scenes/SecondStage/SecondStage.unity
     guid: 9ce2b95028cee684c9327a4bacd8db99
@@ -65,8 +62,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/puzzleScenes/PuzzleGameScene.unity
     guid: 9963d90df5764754090519079d1845d9
-  - enabled: 0
-    path: Assets/Scenes/puzzleScenes/puzzleScene.unity
-    guid: dbb64bbdb8796024b825dc99b03fe0ce
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b3355ef82da48c24497a63b9b99a1ddd, type: 2}

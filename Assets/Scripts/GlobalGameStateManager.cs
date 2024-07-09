@@ -9,6 +9,7 @@ public static class GlobalGameStateManager
     private class GameState
     {
         public bool initialInteractionCompleted;
+        public int characterSelected;
         public bool helpButton;
         public string playerChoice;
         public int currentLevel;
@@ -28,6 +29,7 @@ public static class GlobalGameStateManager
             FirstStageGlobalState.initialInteractionCompleted = gameState.initialInteractionCompleted;
             FirstStageGlobalState.helpButton = gameState.helpButton;
             FirstStageGlobalState.playerChoice = gameState.playerChoice;
+            FirstStageGlobalState.characterSelected = gameState.characterSelected;
             
             NavigationManager.loadLevel(gameState.currentLevel);
 
@@ -54,6 +56,7 @@ public static class GlobalGameStateManager
             initialInteractionCompleted = FirstStageGlobalState.initialInteractionCompleted,
             helpButton = FirstStageGlobalState.helpButton,
             playerChoice = FirstStageGlobalState.playerChoice,
+            characterSelected = FirstStageGlobalState.characterSelected,
             currentLevel = NavigationManager.CurrentLevel
         };
         string json = JsonUtility.ToJson(gameState, true);
