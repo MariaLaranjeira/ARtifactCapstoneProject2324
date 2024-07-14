@@ -108,4 +108,12 @@ public class TriggerLogoRotationAtClick : MonoBehaviour
 
         isRotating = false;
     }
+
+    public void reset ()
+    {
+        rotationCompleted = false;
+        shouldStartRotation = false;
+        transform.localScale = originalScale;
+        transform.rotation = Quaternion.identity;
+    }
 }

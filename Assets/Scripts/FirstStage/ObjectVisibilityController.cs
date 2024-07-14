@@ -11,7 +11,7 @@ public class ObjectVisibilityController : MonoBehaviour
     {
           if (objects.Length > 0)
         {
-            index = Mathf.Clamp(index, 0, objects.Length - 1);
+            index = FirstStageGlobalState.characterSelected;
 
             for (int i = 0; i < objects.Length; i++)
             {
