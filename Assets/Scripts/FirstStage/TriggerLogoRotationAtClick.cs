@@ -115,5 +115,6 @@ public class TriggerLogoRotationAtClick : MonoBehaviour
         shouldStartRotation = false;
         transform.localScale = originalScale;
         transform.rotation = Quaternion.identity;
+        Debug.Log("Reset rotation and scale of logo");
     }
 }

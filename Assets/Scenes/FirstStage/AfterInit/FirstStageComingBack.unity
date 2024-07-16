@@ -438,6 +438,8 @@ GameObject:
   m_Component:
   - component: {fileID: 344576196}
   - component: {fileID: 344576197}
+  - component: {fileID: 344576198}
+  - component: {fileID: 344576199}
   m_Layer: 5
   m_Name: ChildBearer
   m_TagString: Untagged
@@ -479,8 +481,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1468233082}
   animationDuration: 0.5
+  delayBeforeScaling: 5
   logo: {fileID: 2129932771}
   chispas: {fileID: 226089643}
+  fadeDuration: 1
+--- !u!114 &344576198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344576195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 344576197}
+        m_TargetAssemblyTypeName: FunFactsScript, Assembly-CSharp
+        m_MethodName: FadeAndReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!225 &344576199
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344576195}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &697428563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,6 +1697,7 @@ GameObject:
   - component: {fileID: 1468233086}
   - component: {fileID: 1468233085}
   - component: {fileID: 1468233084}
+  - component: {fileID: 1468233088}
   m_Layer: 5
   m_Name: FunFact
   m_TagString: Untagged
@@ -1672,7 +1745,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468233082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 602be34a287cb6e46977e3e15ecd3c9d, type: 3}
   m_Name: 
@@ -1716,6 +1789,73 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468233082}
   m_CullTransparentMesh: 1
+--- !u!114 &1468233088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468233082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270e97bdc408fcf4a89cf17d69b1cb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funFactTextBox: {fileID: 1725999755}
+  displayFunFactButton: {fileID: 2129932779}
+  englishFunFacts:
+  - "... the work \"Carnaval\" by C\xE2ndido Portinari, initially called \"Cavalo-Marinho\",
+    was part of a series of panels commissioned for R\xE1dio Tupi in Rio de Janeiro."
+  - "\u2026 the work of the museum's patron, Soares dos Reis, includes portraits
+    of prominent figures of the high bourgeoisie of Porto, such as the Bust of the
+    Viscountess of Moser and the Bust of Joaquim Pinto Leite."
+  - "\u2026 the Carrancas Palace, the current headquarters of the Soares dos Reis
+    National Museum, was built following the neoclassical style and was the venue
+    for important social events during the 19th century."
+  - "\u2026 in 1950, the museum began investing in updating the Painting and Sculpture
+    collections with works by contemporary artists."
+  - "\u2026 in the portrait of D. Pedro IV, the monarch wears a military jacket with
+    epaulets and displays the insignia of the Order of the Golden Fleece, two commendations,
+    and the sash of the Three Orders."
+  - "\u2026 \"Love one another\" was a work donated to the Soares dos Reis National
+    Museum by the daughter of Francisco Jos\xE9 Resende, after his death."
+  - "\u2026 Henrique Pous\xE3o subverts the theme of the ciociaro by painting a mischievous
+    young boy who improvises a portrait, sent to the Porto Academy in 1882."
+  - "\u2026 the Carrancas Palace, the current headquarters of the museum, was built
+    in 1795 by the Morais e Castro family."
+  - "\u2026 \"The Exiled\", an iconic sculpture by Soares dos Reis, created in Rome
+    in 1872, is one of the most important pieces in the collection, reflecting the
+    artist's sensitivity to themes of nostalgia and exile."
+  - "\u2026 the institution of the museum reflects not only the history of the visual
+    arts in Portugal but also the evolution of museological practices from the 19th
+    century to the present day."
+  portugueseFunFacts:
+  - "... a obra \"Carnaval\" de C\xE2ndido Portinari, inicialmente chamada \"Cavalo-Marinho\",
+    fazia parte de uma s\xE9rie de paineis encomendados para a R\xE1dio Tupi no Rio
+    de Janeiro. "
+  - "\u2026 a obra do patrono do museu, Soares dos Reis. inclui retratos de figuras
+    proeminentes da alta burguesia portuense, como o Busto da Viscondessa de Moser
+    e o Busto de Joaquim Pinto Leite. "
+  - "\u2026 o Pal\xE1cio dos Carrancas, sede atual do Museu Nacional Soares dos Reis,
+    foi constru\xEDdo seguindo o estilo neocl\xE1ssico e foi palco de eventos sociais
+    importantes durante o s\xE9culo XIX. "
+  - "\u2026 em 1950, o museu come\xE7ou a investir na atualiza\xE7\xE3o das cole\xE7\xF5es
+    de Pintura e Escultura com obras de artistas contempor\xE2neos. "
+  - "\u2026 no retrato de D. Pedro IV, o monarca traja casaca de farda com dragonas
+    de cacho e ostenta a ins\xEDgnia do Tos\xE3o de Ouro, duas comendas e banda das
+    Tr\xEAs Ordens."
+  - "\u2026 \"Amai-vos uns aos outros\" foi uma obra doada ao Museu Nacional Soares
+    dos Reis pela filha de Francisco Jos\xE9 Resende, ap\xF3s a sua morte."
+  - "\u2026 Henrique Pous\xE3o subverte o tema do ciociaro ao pintar um jovem travesso
+    que improvisa um retrato, enviado \xE0 Academia Portuense em 1882. "
+  - "\u2026 o Pal\xE1cio dos Carrancas, atual sede do museu, foi constru\xEDdo em
+    1795 pela fam\xEDlia Morais e Castro."
+  - "\u2026 \"O Desterrado\", escultura ic\xF3nica de Soares dos Reis, realizada
+    em Roma em 1872, \xE9 uma das pe\xE7as mais importantes do acervo, refletindo
+    a sensibilidade do artista para temas de nostalgia e ex\xEDlio."
+  - "\u2026 a institui\xE7\xE3o do museu reflete n\xE3o apenas a hist\xF3ria das
+    artes pl\xE1sticas em Portugal, mas tamb\xE9m a evolu\xE7\xE3o das pr\xE1ticas
+    museol\xF3gicas desde o s\xE9culo XIX at\xE9 os dias atuais. "
 --- !u!1 &1553913238
 GameObject:
   m_ObjectHideFlags: 0
