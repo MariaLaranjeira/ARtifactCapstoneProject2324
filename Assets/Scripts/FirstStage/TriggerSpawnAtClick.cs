@@ -55,4 +55,10 @@ public class TriggerSpawnAtClick : MonoBehaviour
 
         textBox.transform.localScale = targetScaleVector;
     }
+
+    public void resetScale()
+    {
+        textBox.transform.localScale = initialScaleVector;
+        Debug.Log("Reset scale of textBox");
+    }
 }
