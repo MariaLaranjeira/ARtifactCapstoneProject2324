@@ -455,7 +455,7 @@ MonoBehaviour:
   - ... so, take one of my drawings with you!
   - But remember - you must return it to me at the end!
   portugueseLines:
-  - 'Hey! Eu moro aqui no museu. '
+  - "Ol\xE1! Eu moro aqui no museu. "
   - "E sei que um museu n\xE3o precisa de ser explorado a s\xF3s..."
   - ... por isso, leva um dos meus desenhos contigo!
   - "Mas n\xE3o te esque\xE7as - ter\xE1s que mo devolver no final!"
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   englishText: Hey! I live here at the museum
-  portugueseText: 'Hey! Eu moro aqui no museu. '
+  portugueseText: "Ol\xE1! Eu moro aqui no museu. "
 --- !u!1 &1175160252
 GameObject:
   m_ObjectHideFlags: 0

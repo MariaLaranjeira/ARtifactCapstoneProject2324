@@ -62,6 +62,7 @@ public class NavigationButton : MonoBehaviour
             }
 
             selfButton.interactable = false; // Disable
+
         }
     }
 }

@@ -708,6 +708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655032238}
   - component: {fileID: 1655032240}
+  - component: {fileID: 1655032244}
   - component: {fileID: 1655032239}
   - component: {fileID: 1655032241}
   - component: {fileID: 1655032243}
@@ -758,7 +759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aponta a c\xE2mara para o retrato!"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
   m_sharedMaterial: {fileID: 4790672791684584487, guid: 3954564dc65590c4481a1c4bcba1de19, type: 2}
@@ -882,6 +883,20 @@ MonoBehaviour:
   imageTargets:
   - {fileID: 474970073}
   toggleVisibility: {fileID: 1655032242}
+--- !u!114 &1655032244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655032237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c7952fafcff5a4298fc4fc52348b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Point the canera to the painting
+  portugueseText: "Aponta a c\xE2mara para a pintura!"
 --- !u!1 &1742766408
 GameObject:
   m_ObjectHideFlags: 0
