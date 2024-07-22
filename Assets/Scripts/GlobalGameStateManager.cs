@@ -34,6 +34,7 @@ public static class GlobalGameStateManager
             NavigationManager.loadLevel(gameState.currentLevel);
 
             Debug.Log("Game state loaded.");
+            Debug.Log(filePath);
         }
         else
         {
