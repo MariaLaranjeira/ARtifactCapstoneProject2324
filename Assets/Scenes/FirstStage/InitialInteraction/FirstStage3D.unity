@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   englishText: Continue
-  portugueseText: Proseguir
+  portugueseText: Prosseguir
 --- !u!114 &652173079
 MonoBehaviour:
   m_ObjectHideFlags: 0
