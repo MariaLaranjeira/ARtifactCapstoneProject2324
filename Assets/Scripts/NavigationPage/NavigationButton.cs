@@ -61,7 +61,7 @@ public class NavigationButton : MonoBehaviour
                 PaintStatusImage.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f); // Change paint scale to 0.85
             }
 
-            selfButton.interactable = false; // Disable
+            selfButton.interactable = true; // Disable
 
         }
     }
