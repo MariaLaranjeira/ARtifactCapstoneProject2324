@@ -46,6 +46,7 @@ public static class GlobalGameStateManager
     {
         FirstStageGlobalState.ResetState();
         NavigationManager.loadLevel(0);
+        REDGlobalState.ResetState();
         SaveGameState();
         Debug.Log("New game state created.");
     }
